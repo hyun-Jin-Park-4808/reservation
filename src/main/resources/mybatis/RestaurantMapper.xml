@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0/EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zerobase.reservation.restaurant.mapper.RestaurantMapper">
+
+    <select id="selectList" resultType="com.zerobase.reservation.restaurant.entity.Restaurant">
+
+        select *
+        from restaurant
+        where 1 = 1
+        order by distance+0 asc
+
+    </select>
+
+</mapper>
